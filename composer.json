@@ -1,6 +1,6 @@
 {
 	"name": "bfday/bitrix__daily_funcs",
-	"description": "1C-Bitrix dayly routine function to help to developer",
+	"description": "1C-Bitrix daily routine functions to help to developer",
 	"version": "0.0.1",
 	"type": "library",
 	"keywords": ["php", "1c-bitrix", "bitrix"],
