@@ -1,2 +1,2 @@
-1C-Bitrix dayly routine functions to help to developer
+1C-Bitrix daily routine functions to help to developer
 ---
