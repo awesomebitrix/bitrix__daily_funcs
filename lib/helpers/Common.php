@@ -141,4 +141,10 @@ class Common
     {
         if (isset($url)) header('Location: ' . $url, true, $code);
     }
+
+    static function getURLProtocolPrefix()
+    {
+        $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+        return $protocol;
+    }
 }
