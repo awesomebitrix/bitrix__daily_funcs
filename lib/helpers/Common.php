@@ -25,7 +25,7 @@ class Common
         for (; $last_part < $parts_count; ++$last_part) {
             $length += strlen($parts[$last_part]);
             if ($length > $your_desired_width) {
-                if (!empty($suffix)) {
+                if (!empty($suffix) && strpos($parts[$last_part-1], $suffix)===false) {
                     if ($parts[$last_part-1] = ' ') $parts[$last_part-1] = '';
                     $parts[$last_part++] = $suffix;
                 }
