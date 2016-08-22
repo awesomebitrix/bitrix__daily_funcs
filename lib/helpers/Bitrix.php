@@ -13,14 +13,14 @@ class Bitrix
      * @param string $propertyCode
      * @return null
      */
-    static public function getIBlockElementById ($id, $propertyCode = 'PREVIEW_TEXT'){
-        if(!\CModule::IncludeModule("iblock")) return null;
+    static public function getIBlockElementById($id, $propertyCode = 'PREVIEW_TEXT')
+    {
+        if (!\CModule::IncludeModule("iblock")) return null;
         $res = \CIBlockElement::GetByID($id);
         $ar_res = $res->GetNext();
-        if($ar_res && !empty($ar_res[$propertyCode])) {
+        if ($ar_res && !empty($ar_res[$propertyCode])) {
             return $ar_res[$propertyCode];
-        }
-        else return null;
+        } else return null;
     }
 
     /**
@@ -29,7 +29,8 @@ class Bitrix
      * @param string $propertyCode
      * @return string
      */
-    static public function getEditableIBlockElementById ($IblockID, $id, $propertyCode = 'PREVIEW_TEXT'){
+    static public function getEditableIBlockElementById($IblockID, $id, $propertyCode = 'PREVIEW_TEXT')
+    {
         global $APPLICATION;
         ob_start();
         $APPLICATION->IncludeComponent(

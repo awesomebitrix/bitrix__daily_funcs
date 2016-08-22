@@ -1,4 +1,5 @@
-#!/usr/bin/bash
+#!/bin/bash
 git add --all
 git commit -m "new fixes"
 git push
+git push origin --tags

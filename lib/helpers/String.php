@@ -1,5 +1,4 @@
 <?php
-
 namespace bitrix__daily_funcs\helpers;
 
 /**
@@ -26,7 +25,8 @@ class String
     }
 
     /**
-     * Replaces every token taken from keys of $tokenValueArray by corresponding value taken from $tokenValueArray. Keys of $tokenValueArray are regular expression without slashes at the begining and at the end).
+     * Replaces every token taken from keys of $tokenValueArray by corresponding value taken from $tokenValueArray.
+     * Keys of $tokenValueArray are regular expression without slashes at the begining and at the end).
      *
      * @param $string
      * @param $tokenValueArray
