@@ -1,5 +1,7 @@
 #!/bin/bash
+TAG_NAME=v1.0.0
 git add --all
 git commit -m "new changes"
 git push
-git push origin --tags
+git tag -f -a ${TAG_NAME} -m "version ${TAG_NAME}"
+git push origin ${TAG_NAME}

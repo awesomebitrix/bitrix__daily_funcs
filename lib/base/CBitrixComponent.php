@@ -10,6 +10,11 @@ Loc::loadMessages(__FILE__);
 abstract class CBitrixComponent extends \CBitrixComponent
 {
     /**
+     * @var array - default values for $arParams var
+     */
+    protected $arParamsDefaults = array();
+
+    /**
      * @var array - The codes of modules that will be included before executing component
      */
     protected $requiredModules = array();
@@ -41,6 +46,7 @@ abstract class CBitrixComponent extends \CBitrixComponent
 
     final protected function executeBase()
     {
+        $this->init();
         $this->includeModules();
         $this->checkParams();
         $this->startAjax();
@@ -97,6 +103,13 @@ abstract class CBitrixComponent extends \CBitrixComponent
             }
         }
 
+        return true;
+    }
+
+    protected function init()
+    {
+        // init default values for arParams if corresponding values are empty
+        $this->arParams = array_merge($this->arParamsDefaults, $this->arParams);
         return true;
     }
 
