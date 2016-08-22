@@ -2,7 +2,6 @@
   "author": "Stepanov Stanislav",
   "name": "1c bitrix daily functions",
   "description": "1C-Bitrix daily routine functions to help to developer",
-  "version": "1.0.0",
   "homepage": "https://github.com/bfday/bitrix__daily_funcs",
   "licenses": [
     {
