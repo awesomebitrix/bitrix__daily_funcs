@@ -1,7 +1,6 @@
 {
 	"name": "bfday/bitrix-daily-functions",
 	"description": "1C-Bitrix daily routine functions to help to developer",
-	"version": "1.0.0",
 	"type": "library",
 	"keywords": ["php", "1c-bitrix", "bitrix"],
 	"license": "MIT",
@@ -10,8 +9,6 @@
 	},
 	"autoload": {
 		"psr-4": { "bitrix__daily_funcs\\": "lib/" }
-	},
-	"require": {
 	},
 	"repositories": [
 		{
